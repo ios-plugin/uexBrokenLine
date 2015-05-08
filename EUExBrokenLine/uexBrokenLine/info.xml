@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uexplugins>
+    <plugin
+        uexName="uexBrokenLine" version="3.0.2" build="2">
+        <info>2:修复打开直线图比较慢的bug</info>
+        <build>1:使用新版Xcode重新编译,支持arm64</build>
+        <build>0:折线图功能插件</build>
+    </plugin>
+</uexplugins>
