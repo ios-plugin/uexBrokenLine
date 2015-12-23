@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42EE60B01C2A8E23007CFCB4 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EE60AE1C2A8E23007CFCB4 /* test.png */; };
+		42EE60B11C2A8E23007CFCB4 /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = 42EE60AF1C2A8E23007CFCB4 /* test1.png */; };
 		5A50155D188FBF980022E07C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A50155C188FBF980022E07C /* Foundation.framework */; };
 		5A501564188FBF980022E07C /* EUExBrokenLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A501563188FBF980022E07C /* EUExBrokenLine.m */; };
 		5A501591188FBFFA0022E07C /* PCLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A501590188FBFFA0022E07C /* PCLineChartView.m */; };
@@ -25,6 +27,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		42EE60A81C2A8E06007CFCB4 /* uexBrokenLine.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uexBrokenLine.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EE60AE1C2A8E23007CFCB4 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		42EE60AF1C2A8E23007CFCB4 /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test1.png; sourceTree = "<group>"; };
 		5A501559188FBF980022E07C /* libuexBrokenLine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexBrokenLine.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A50155C188FBF980022E07C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A501560188FBF980022E07C /* EUExBrokenLine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EUExBrokenLine-Prefix.pch"; sourceTree = "<group>"; };
@@ -45,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		42EE60A51C2A8E06007CFCB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A501556188FBF980022E07C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,10 +68,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42EE60A91C2A8E06007CFCB4 /* uexBrokenLineBundle */ = {
+			isa = PBXGroup;
+			children = (
+				42EE60AE1C2A8E23007CFCB4 /* test.png */,
+				42EE60AF1C2A8E23007CFCB4 /* test1.png */,
+			);
+			path = uexBrokenLineBundle;
+			sourceTree = "<group>";
+		};
 		5A501550188FBF980022E07C = {
 			isa = PBXGroup;
 			children = (
 				5A50155E188FBF980022E07C /* EUExBrokenLine */,
+				42EE60A91C2A8E06007CFCB4 /* uexBrokenLineBundle */,
 				5A50155B188FBF980022E07C /* Frameworks */,
 				5A50155A188FBF980022E07C /* Products */,
 			);
@@ -69,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				5A501559188FBF980022E07C /* libuexBrokenLine.a */,
+				42EE60A81C2A8E06007CFCB4 /* uexBrokenLine.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +161,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		42EE60A71C2A8E06007CFCB4 /* uexBrokenLineBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EE60AB1C2A8E06007CFCB4 /* Build configuration list for PBXNativeTarget "uexBrokenLineBundle" */;
+			buildPhases = (
+				42EE60A41C2A8E06007CFCB4 /* Sources */,
+				42EE60A51C2A8E06007CFCB4 /* Frameworks */,
+				42EE60A61C2A8E06007CFCB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uexBrokenLineBundle;
+			productName = uexBrokenLineBundle;
+			productReference = 42EE60A81C2A8E06007CFCB4 /* uexBrokenLine.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		5A501558188FBF980022E07C /* EUExBrokenLine */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A50157C188FBF980022E07C /* Build configuration list for PBXNativeTarget "EUExBrokenLine" */;
@@ -163,6 +203,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = xll;
+				TargetAttributes = {
+					42EE60A71C2A8E06007CFCB4 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
 			};
 			buildConfigurationList = 5A501554188FBF980022E07C /* Build configuration list for PBXProject "EUExBrokenLine" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -177,11 +222,31 @@
 			projectRoot = "";
 			targets = (
 				5A501558188FBF980022E07C /* EUExBrokenLine */,
+				42EE60A71C2A8E06007CFCB4 /* uexBrokenLineBundle */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		42EE60A61C2A8E06007CFCB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE60B01C2A8E23007CFCB4 /* test.png in Resources */,
+				42EE60B11C2A8E23007CFCB4 /* test1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		42EE60A41C2A8E06007CFCB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A501555188FBF980022E07C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,6 +259,56 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		42EE60AC1C2A8E06007CFCB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zywx.uexBrokenLineBundle;
+				PRODUCT_NAME = uexBrokenLine;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		42EE60AD1C2A8E06007CFCB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zywx.uexBrokenLineBundle;
+				PRODUCT_NAME = uexBrokenLine;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		5A50157A188FBF980022E07C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -297,6 +412,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		42EE60AB1C2A8E06007CFCB4 /* Build configuration list for PBXNativeTarget "uexBrokenLineBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EE60AC1C2A8E06007CFCB4 /* Debug */,
+				42EE60AD1C2A8E06007CFCB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5A501554188FBF980022E07C /* Build configuration list for PBXProject "EUExBrokenLine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

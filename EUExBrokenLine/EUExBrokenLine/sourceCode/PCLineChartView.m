@@ -152,15 +152,14 @@
         if (i > ActX - 1)  {
             CGRect circleRect = CGRectMake(self.rightNotesWidth + 10 + intervalX * i - 7.5,y - 10, 15, 15);
             UIImageView * rect = [[UIImageView alloc]initWithFrame:circleRect];
-            NSString * impath = [[NSBundle mainBundle]pathForResource:@"uexBrokenLine/test1" ofType:@"png"];
-            rect.image = [UIImage imageWithContentsOfFile:impath];
+
+            rect.image = [UIImage imageWithContentsOfFile:[[UEX_BUNDLE resourcePath] stringByAppendingPathComponent: @"test1.png"]];
             [self addSubview:rect];
             [rect release];
         } else {
             CGRect circleRect = CGRectMake(self.rightNotesWidth + 10 + intervalX * i - 7.5,y - 10, 15, 15);
             UIImageView * rect = [[UIImageView alloc]initWithFrame:circleRect];
-            NSString * impath = [[NSBundle mainBundle]pathForResource:@"uexBrokenLine/test" ofType:@"png"];
-            rect.image = [UIImage imageWithContentsOfFile:impath];
+            rect.image = [UIImage imageWithContentsOfFile:[[UEX_BUNDLE resourcePath] stringByAppendingPathComponent: @"test.png"]];
             [self addSubview:rect];
             [rect release];
         }
